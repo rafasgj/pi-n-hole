@@ -1,0 +1,9 @@
+# image output directory
+/Pictures/
+
+# build directories
+/build/
+/*.egg-info/
+
+# temporary files
+.*.swp

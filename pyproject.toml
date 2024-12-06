@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pi-n-hole"
+dynamic = ["version"]
+authors = [
+    {name = "Rafael Guterres Jeffman", email = "rjeffman@redhat.com"},
+]
+description = "The shortest code digital camera you've ever seen."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["digital camera", "raspberry pi"]
+license = {file = "COPYING"}
+
+dependencies = [
+    "picamera2",
+    "gpiod"
+]
+
+[project.urls]
+homepage = "https://github.com/rafasgj/pi-n-hole"
+repository = "https://github.com/rafasgj/pi-n-hole.git"
+issues = "https://github.com/rafasgj/pi-n-hole/issues"
+
+[project.optional-dependencies]
+dev = ["black", "pre-commit", "pylint"]
+
+[project.scripts]
+pi-n-hole = "pinhole.__main__:main"
+
+[tool.setuptools]
+packages = ["pinhole"]
+
+[tool.setuptools.dynamic]
+version = {attr = "pinhole.__main__.__version__"}
+
+[tool.black]
+line-length = 80
+target-version = ['py310']
+include = '\.pyi?$'
+
+[tool.pylint.'FORMAT']
+max-line-length = 80

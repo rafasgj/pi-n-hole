@@ -5,5 +5,8 @@
 /build/
 /*.egg-info/
 
+# python cache
+/**/__pycache__/
+
 # temporary files
 .*.swp

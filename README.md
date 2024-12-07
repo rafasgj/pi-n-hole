@@ -11,6 +11,7 @@ For this experiment, I used:
 
 * A Raspberry Pi Zero W 2
     * I wanted to use an original Zero W, but due to time constraints I was not able to solder the pins to the board, it should, however, work.
+* A Raspberry Pi Camera Module
 * A [TTP223](https://www.instructables.com/Tutorial-for-TTP223-Touch-Sensor-Module-Capacitive) touch sensor module
 
 Simply tie the TTP223 module to pins 17 (3.3V -> VCC), 16 (GPIO24 -> I/O) and 14 (GND).

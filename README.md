@@ -1,3 +1,6 @@
+---
+---
+
 pi-n-hole
 =========
 
@@ -15,6 +18,13 @@ For this experiment, I used:
 * A [TTP223](https://www.instructables.com/Tutorial-for-TTP223-Touch-Sensor-Module-Capacitive) touch sensor module
 
 Simply tie the TTP223 module to pins 17 (3.3V -> VCC), 16 (GPIO24 -> I/O) and 14 (GND).
+
+This is how the device looks:
+
+[![Device Front](docs/images/device_front.jpg)](docs/images/device_front.jpg)
+[![Device Back](docs/images/device_back.jpg)](docs/images/device_back.jpg)
+
+Note the rubber finish on the body!
 
 
 Software
